@@ -1,0 +1,72 @@
+body {
+  background-color: #fefefc;
+ font-family: "Indie Flower", cursive;
+
+}
+
+.bg-light-green {
+  background-color: #e3f8e0;
+}
+
+.bg-ivory {
+  background-color: #fefdf6;
+}
+
+.header-img {
+  width: 60px;
+  height: 60px;
+}
+
+.note-card {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.note-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.animate-pop {
+  animation: pop-in 0.5s ease forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn-primary {
+  background-color: #6fcf97;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #5abf87;
+}
+
+  .animated-title {
+            font-size: 100px; 
+            font-weight: bold;
+            margin-top: 20px;
+            animation: bounce 3s infinite; 
+            color: #dd7724; 
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
